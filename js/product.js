@@ -98,7 +98,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 // Функция для показа подробностей фермера
 function showFarmerDetails(farmerName) {
-    fetch('../data/farmers.json')
+    fetch('./data/farmers.json')
         .then(res => res.json())
         .then(farmers => {
             const farmer = farmers.find(f => f.name === farmerName);
